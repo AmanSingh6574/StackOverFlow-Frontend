@@ -33,7 +33,7 @@ const Chatbot = ({ setBotIsOpen }) => {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/chat", {
+    const response = await fetch("https://stack-overflow-clone-server-xv6l.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
